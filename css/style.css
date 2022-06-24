@@ -1,0 +1,819 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+}
+
+.header__container {
+  max-width: 1160px;
+  height: 60px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10px;
+}
+
+.header__container a {
+  text-decoration: none;
+  color: white;
+  margin-left: 80px;
+  font-size: 20px;
+}
+
+.header__container a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  max-width: 100%;
+  position: relative;
+  overflow: scroll;
+}
+
+.main__bg {
+  width: 100%;
+}
+
+.main__lands-static {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__lands-static_container {
+  position: relative;
+  width: 45vw;
+  height: 45vw;
+}
+
+.main__lands-static_container_lineup {
+  position: relative;
+  width: 45vw;
+  height: 23vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__lands-static_container_lineup_elem {
+  position: relative;
+  width: 16vw;
+  height: 22vw;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.main__lands-static_container_lineup_elem_img {
+  max-width: none;
+  min-width: auto;
+  min-height: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main__lands-static_container_lineup_bg {
+  position: absolute;
+  top: -27.7vw;
+  left: -28vw;
+  width: 100.5vw;
+  height: 100.2vw;
+  background-color: #0000008a;
+  z-index: 10;
+  display: none;
+}
+
+.main__lands-static_container_lineup_bg_title {
+  position: absolute;
+  color: white;
+  top: 18vw;
+  left: 27vw;
+  font-size: 4vw;
+}
+
+.main__lands-static_container_lineup_bg_size {
+  position: absolute;
+  color: white;
+  top: 26vw;
+  left: 47vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_lineup_bg_sizenumb {
+  position: absolute;
+  color: white;
+  top: 28vw;
+  left: 47vw;
+  font-size: 6vw;
+}
+
+.main__lands-static_container_lineup_bg_lands {
+  position: absolute;
+  color: white;
+  top: 37vw;
+  left: 47vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_lineup_bg_lands-size1 {
+  position: absolute;
+  color: white;
+  top: 40.5vw;
+  left: 47vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_lineup_bg_landsq1 {
+  position: absolute;
+  color: white;
+  top: 41.5vw;
+  left: 47vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_lineup_bg_lands-size3 {
+  position: absolute;
+  color: white;
+  top: 40.5vw;
+  left: 55vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_lineup_bg_landsq3 {
+  position: absolute;
+  color: white;
+  top: 41.5vw;
+  left: 55vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_lineup_bg_lands-size5 {
+  position: absolute;
+  color: white;
+  top: 44.5vw;
+  left: 47vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_lineup_bg_landsq5 {
+  position: absolute;
+  color: white;
+  top: 45.5vw;
+  left: 47vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_lineup_bg_lands-sizes {
+  position: absolute;
+  color: white;
+  top: 44.5vw;
+  left: 55vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_lineup_bg_landsqs {
+  position: absolute;
+  color: white;
+  top: 45.5vw;
+  left: 55vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_lineup_elem:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 100;
+}
+
+.main__lands-static_container_lineup_elem:hover + .main__lands-static_container_lineup_bg {
+  display: block;
+}
+
+.main__lands-static_container_lineup_elem2 {
+  position: relative;
+  width: 23vw;
+  height: 15.5vw;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.main__lands-static_container_lineup_elem2_img {
+  max-width: none;
+  min-width: auto;
+  min-height: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main__lands-static_container_lineup_bg2 {
+  position: absolute;
+  top: -27.7vw;
+  left: -28vw;
+  width: 100.5vw;
+  height: 100.2vw;
+  background-color: #0000008a;
+  z-index: 10;
+  display: none;
+}
+
+.main__lands-static_container_lineup_bg2_title {
+  position: absolute;
+  color: white;
+  top: 18vw;
+  left: 58vw;
+  font-size: 4vw;
+}
+
+.main__lands-static_container_lineup_bg2_size {
+  position: absolute;
+  color: white;
+  top: 26vw;
+  left: 34vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_lineup_bg2_sizenumb {
+  position: absolute;
+  color: white;
+  top: 28vw;
+  left: 34vw;
+  font-size: 6vw;
+}
+
+.main__lands-static_container_lineup_bg2_lands {
+  position: absolute;
+  color: white;
+  top: 37vw;
+  left: 34vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_lineup_bg2_lands-size1 {
+  position: absolute;
+  color: white;
+  top: 40.5vw;
+  left: 34vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_lineup_bg2_landsq1 {
+  position: absolute;
+  color: white;
+  top: 41.5vw;
+  left: 34vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_lineup_bg2_lands-size3 {
+  position: absolute;
+  color: white;
+  top: 40.5vw;
+  left: 42vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_lineup_bg2_landsq3 {
+  position: absolute;
+  color: white;
+  top: 41.5vw;
+  left: 42vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_lineup_bg2_lands-size5 {
+  position: absolute;
+  color: white;
+  top: 44.5vw;
+  left: 34vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_lineup_bg2_landsq5 {
+  position: absolute;
+  color: white;
+  top: 45.5vw;
+  left: 34vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_lineup_bg2_lands-sizes {
+  position: absolute;
+  color: white;
+  top: 44.5vw;
+  left: 42vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_lineup_bg2_landsqs {
+  position: absolute;
+  color: white;
+  top: 45.5vw;
+  left: 42vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_lineup_elem2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 100;
+}
+
+.main__lands-static_container_lineup_elem2:hover + .main__lands-static_container_lineup_bg2 {
+  display: block;
+}
+
+.main__lands-static_container_linecent {
+  position: relative;
+  width: 23vw;
+  height: 23vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 10vw;
+  top: -13.5vw;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.main__lands-static_container_linecent_img {
+  max-width: none;
+  min-width: auto;
+  min-height: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main__lands-static_container_bglinecent {
+  position: absolute;
+  top: -27.7vw;
+  left: -28vw;
+  width: 100.5vw;
+  height: 100.2vw;
+  background-color: #0000008a;
+  z-index: 10;
+  display: none;
+}
+
+.main__lands-static_container_bglinecent_title {
+  position: absolute;
+  color: white;
+  top: 33vw;
+  left: 36vw;
+  font-size: 4vw;
+}
+
+.main__lands-static_container_bglinecent_size {
+  position: absolute;
+  color: white;
+  top: 41vw;
+  left: 59vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_bglinecent_sizenumb {
+  position: absolute;
+  color: white;
+  top: 43vw;
+  left: 59vw;
+  font-size: 6vw;
+}
+
+.main__lands-static_container_bglinecent_lands {
+  position: absolute;
+  color: white;
+  top: 52vw;
+  left: 59vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_bglinecent_lands-size1 {
+  position: absolute;
+  color: white;
+  top: 55.5vw;
+  left: 59vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_bglinecent_landsq1 {
+  position: absolute;
+  color: white;
+  top: 56.5vw;
+  left: 59vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_bglinecent_lands-size3 {
+  position: absolute;
+  color: white;
+  top: 55.5vw;
+  left: 67vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_bglinecent_landsq3 {
+  position: absolute;
+  color: white;
+  top: 56.5vw;
+  left: 67vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_bglinecent_lands-size5 {
+  position: absolute;
+  color: white;
+  top: 59.5vw;
+  left: 59vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_bglinecent_landsq5 {
+  position: absolute;
+  color: white;
+  top: 60.5vw;
+  left: 59vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_bglinecent_lands-sizes {
+  position: absolute;
+  color: white;
+  top: 59.5vw;
+  left: 67vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_bglinecent_landsqs {
+  position: absolute;
+  color: white;
+  top: 60.5vw;
+  left: 67vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linecent:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 100;
+}
+
+.main__lands-static_container_linecent:hover + .main__lands-static_container_bglinecent {
+  display: block;
+}
+
+.main__lands-static_container_linelo {
+  position: relative;
+  width: 45vw;
+  height: 21vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: -22vw;
+}
+
+.main__lands-static_container_linelo_elem {
+  position: relative;
+  width: 19vw;
+  height: 17.5vw;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.main__lands-static_container_linelo_elem_img {
+  max-width: none;
+  min-width: auto;
+  min-height: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main__lands-static_container_linelo_bg {
+  position: absolute;
+  top: -51.7vw;
+  left: -28vw;
+  width: 100.5vw;
+  height: 100.2vw;
+  background-color: #0000008a;
+  z-index: 10;
+  display: none;
+}
+
+.main__lands-static_container_linelo_bg_title {
+  position: absolute;
+  color: white;
+  top: 72vw;
+  left: 27vw;
+  font-size: 4vw;
+}
+
+.main__lands-static_container_linelo_bg_size {
+  position: absolute;
+  color: white;
+  top: 54vw;
+  left: 50vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linelo_bg_sizenumb {
+  position: absolute;
+  color: white;
+  top: 56vw;
+  left: 50vw;
+  font-size: 6vw;
+}
+
+.main__lands-static_container_linelo_bg_lands {
+  position: absolute;
+  color: white;
+  top: 65vw;
+  left: 50vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linelo_bg_lands-size1 {
+  position: absolute;
+  color: white;
+  top: 68.5vw;
+  left: 50vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_linelo_bg_landsq1 {
+  position: absolute;
+  color: white;
+  top: 69.5vw;
+  left: 50vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linelo_bg_lands-size3 {
+  position: absolute;
+  color: white;
+  top: 68.5vw;
+  left: 58vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_linelo_bg_landsq3 {
+  position: absolute;
+  color: white;
+  top: 69.5vw;
+  left: 58vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linelo_bg_lands-size5 {
+  position: absolute;
+  color: white;
+  top: 72.5vw;
+  left: 50vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_linelo_bg_landsq5 {
+  position: absolute;
+  color: white;
+  top: 73.5vw;
+  left: 50vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linelo_bg_lands-sizes {
+  position: absolute;
+  color: white;
+  top: 72.5vw;
+  left: 58vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_linelo_bg_landsqs {
+  position: absolute;
+  color: white;
+  top: 73.5vw;
+  left: 58vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linelo_elem:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 100;
+}
+
+.main__lands-static_container_linelo_elem:hover + .main__lands-static_container_linelo_bg {
+  display: block;
+}
+
+.main__lands-static_container_linelo_elem2 {
+  position: relative;
+  width: 20vw;
+  height: 24vw;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.main__lands-static_container_linelo_elem2_img {
+  max-width: none;
+  min-width: auto;
+  min-height: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main__lands-static_container_linelo_bg2 {
+  position: absolute;
+  top: -51.7vw;
+  left: -28vw;
+  width: 100.5vw;
+  height: 100.2vw;
+  background-color: #0000008a;
+  z-index: 10;
+  display: none;
+}
+
+.main__lands-static_container_linelo_bg2_title {
+  position: absolute;
+  color: white;
+  top: 72vw;
+  left: 48vw;
+  font-size: 4vw;
+}
+
+.main__lands-static_container_linelo_bg2_size {
+  position: absolute;
+  color: white;
+  top: 47vw;
+  left: 35vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linelo_bg2_sizenumb {
+  position: absolute;
+  color: white;
+  top: 49vw;
+  left: 35vw;
+  font-size: 6vw;
+}
+
+.main__lands-static_container_linelo_bg2_lands {
+  position: absolute;
+  color: white;
+  top: 58vw;
+  left: 35vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linelo_bg2_lands-size1 {
+  position: absolute;
+  color: white;
+  top: 61.5vw;
+  left: 35vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_linelo_bg2_landsq1 {
+  position: absolute;
+  color: white;
+  top: 62.5vw;
+  left: 35vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linelo_bg2_lands-size3 {
+  position: absolute;
+  color: white;
+  top: 61.5vw;
+  left: 43vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_linelo_bg2_landsq3 {
+  position: absolute;
+  color: white;
+  top: 62.5vw;
+  left: 43vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linelo_bg2_lands-size5 {
+  position: absolute;
+  color: white;
+  top: 65.5vw;
+  left: 35vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_linelo_bg2_landsq5 {
+  position: absolute;
+  color: white;
+  top: 66.5vw;
+  left: 35vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linelo_bg2_lands-sizes {
+  position: absolute;
+  color: white;
+  top: 65.5vw;
+  left: 43vw;
+  font-size: 1vw;
+}
+
+.main__lands-static_container_linelo_bg2_landsqs {
+  position: absolute;
+  color: white;
+  top: 66.5vw;
+  left: 43vw;
+  font-size: 2vw;
+}
+
+.main__lands-static_container_linelo_elem2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 100;
+}
+
+.main__lands-static_container_linelo_elem2:hover + .main__lands-static_container_linelo_bg2 {
+  display: block;
+}
+
+.footer {
+  margin-top: -10px;
+  width: 100%;
+  height: 200px;
+  background-color: black;
+}
+
+.footer__container {
+  padding-top: 20px;
+  max-width: 1160px;
+  height: 160px;
+  margin: 0 auto;
+}
+
+.footer__container_upline {
+  height: 80px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__container_loline {
+  height: 80px;
+  width: 100%;
+}
